@@ -1,0 +1,136 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    margin: 0; /* Elimina márgenes del navegador */
+    padding: 0; /* Elimina relleno */
+    background: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color del texto */
+}
+
+/* Encabezado del sitio */
+header {
+    background-color: #007acc; /* Fondo azul */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Imagen de perfil */
+.foto-perfil {
+    width: 120px; /* Tamaño de la imagen */
+    border-radius: 70%; /* Bordes redondeados para apariencia circular */
+}
+
+/* Menú de navegación */
+nav .menu {
+    list-style: none; /* Elimina viñetas */
+    padding: 0;
+    display: flex; /* Layout en fila */
+    justify-content: center; /* Centra los elementos */
+    gap: 15px; /* Espaciado entre enlaces */
+    flex-wrap: wrap; /* Permite salto de línea en pantallas pequeñas */
+}
+
+/* Elementos individuales del menú */
+nav .menu li {
+    margin: 10px;
+}
+
+/* Enlaces del menú */
+nav .menu a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo */
+    margin: auto; /* Centrado horizontal */
+}
+
+/* Secciones del contenido */
+section {
+    margin-bottom: 30px; /* Separación entre secciones */
+}
+
+/* Contenedor individual para habilidades */
+.skill {
+    margin: 10px 0;
+}
+
+/* Barra base para mostrar progreso */
+.bar {
+    width: 100%;
+    background: #ddd; /* Color de fondo gris claro */
+    border-radius: 5px;
+    overflow: hidden; /* Oculta contenido que se desborde */
+}
+
+/* Barra de progreso */
+.progress {
+    height: 20px;
+    border-radius: 5px;
+}
+
+/* Progreso por habilidad con diferentes anchos y colores */
+.html { width: 50%; background-color: #007acc; } /*html*/
+.css { width: 45%; background-color: #0dc2de; }/*css*/
+.js { width: 35%; background-color: #007acc; }/*javascript*/
+.java { width: 60%; background-color: #0dc2de; }/*java*/
+.cpp { width: 25%; background-color: #007acc; }/*c++*/
+
+/* Estilos del formulario */
+form {
+    background: #fff; /* Fondo blanco */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* Entradas y áreas de texto del formulario */
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón del formulario */
+form button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Efecto hover en el botón */
+form button:hover {
+    background-color: #005f99; /* Color más oscuro al pasar el cursor */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    nav .menu {
+        flex-direction: column; /* Cambia a formato columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .foto-perfil {
+        width: 150px; /* Reduce tamaño de imagen */
+    }
+}

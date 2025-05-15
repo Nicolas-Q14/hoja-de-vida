@@ -1,0 +1,103 @@
+<!DOCTYPE html>   
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/FOTOGRAFIA.jpeg" alt="Mi Foto" class="foto-perfil">
+        <h1>Nicolas Alejandro Quitian Ruiz</h1>
+        <p>Desarrollador web junior con pasión por aprender y crear soluciones digitales.</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobremi">
+            <h2>Sobre mí</h2>
+            <p>Estudiante de Desarrollo de Software con sólidos conocimientos en programación, bases de datos y metodologías ágiles. Apasionado por la tecnología, con habilidades para el trabajo en equipo, la resolución de problemas y el aprendizaje continuo. Busco adquirir experiencia práctica que complemente mi formación académica y contribuya al crecimiento de proyectos innovadores</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Lenguajes de programación:</p>
+            <div class="skill">
+                <label>HTML</label>
+                <div class="bar"><div class="progress html"></div></div>
+            </div>
+            <div class="skill">
+                <label>CSS</label>
+                <div class="bar"><div class="progress css"></div></div>
+            </div>
+            <div class="skill">
+                <label>JavaScript</label>
+                <div class="bar"><div class="progress js"></div></div>
+            </div>
+            <div class="skill">
+                <label>Java</label>
+                <div class="bar"><div class="progress java"></div></div>
+            </div>
+            <div class="skill">
+                <label>C++</label>
+                <div class="bar"><div class="progress cpp"></div></div>
+            </div>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <ul>
+                <li>Gimnasio Real Americano - primaria y bachillerato (2010 - 2021)</li>
+                <li>SENA - Técnico en Sistemas (2021 - 2023)</li>
+                <li>Universidad Uniagustiniana - Tecnólogo en Desarrollo de Software (2024 - Actualidad)</li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>Comercializadores R&M - Técnico en Sistemas (2023)</li>
+                <li>Thomy Club - Vendedor de Mostrador (Presente)</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: nicolas.quitianr@uniagustiniana.edu.co</p>
+            <p>
+                <a href="https://github.com/tuusuario" target="_blank">GitHub</a> | 
+                <a href="https://w.app/xiwacg" target="_blank">WhatsApp</a>
+            </p>
+
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Nicolas Quitian Ruiz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
